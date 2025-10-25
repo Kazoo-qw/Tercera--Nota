@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First WebSite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Welcome to My Website</h1>
+    <p>This is a paragraph on my first webpage.</p>
+    <script src="script.js"></script>
+
+    <input type="text" name="username" maxlength="15" placeholder="Enter username">
+
+    <p>Seleccionar Genero</p>
+    <input type="radio" name="gender" value="male" id="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" value="female" id="female">
+    <label for="female">Female</label>
+
+    <p>Checkbox</p>
+    <input type="checkbox" name="interest" value="coding" id="coding">
+    <label for="coding">Coding</label>
+
+    <p>Menu Desplegable</p>
+    <select name="country">
+    <option value="USA">United States</option>
+    <option value="Canada">Canada</option>
+    <option value="Colombia">Colombia</option>
+    </select>
+
+    <p>Boton Enviar</p>
+    <input type="submit" value="Submit Form">
+    <button type="submit">Boton de enviar</button>
+
+    <p>Boton Resetear</p>
+    <form action="/submit-form" method="post">
+        <input type="email" name="email" required />
+        <input type="number" name="age" min="18" max="100" />
+        <button type="submit">Submit Form</button>
+        <input type="reset" value="Reset Form">
+    </form>
+    
+    <p>Buscar Carpeta</p>
+    <input type="file" name="document">
+
+    <p>Fecha de nacimiento</p>/
+    <input type="date" name="birthday">
+
+    <p></p>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" pattern=".{8,}" title="Must contain at least 8 or more characters" required>
+
+    <p></p>
+    <label>Interests:</label>
+    <input type="checkbox" id="coding" name="interests" value="coding">
+    <label for="coding">Coding</label>
+    <input type="checkbox" id="music" name="interests" value="music">
+    <label for="music">Music</label>
+    <!-- Add other interests as needed -->
+    </form>
+
+    
+</body>
+</html>
