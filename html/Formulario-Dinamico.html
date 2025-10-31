@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario Dinámico con Validación</title>
+</head>
+<body>
+
+  <h2>Formulario de Comidas</h2>
+
+  <form id="registrationForm">
+    <label for="tipoComida">Tipo de comida:</label>
+    <select id="tipoComida" name="tipoComida" required onchange="mostrarOpciones()">
+      <option value="">Selecciona...</option>
+      <option value="desayuno">Desayuno</option>
+      <option value="almuerzo">Almuerzo</option>
+      <option value="cena">Cena</option>
+    </select>
+
+    <br><br>
+
+    <div id="menuOpciones"></div>
+    <br>
+    <div id="horarios"></div>
+    <br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script src="../Js/script-formulario-dinamico.js"></script>
+
+</body>
+</html>
