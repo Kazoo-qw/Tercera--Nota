@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#Formulario-Registro {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    width: 30%;
+}
